@@ -1,0 +1,140 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  //ui settings
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_line_height": "comfortable",
+  "line_indicator_format": "long",
+  "minimap": {
+    "show": "auto"
+  },
+  "bottom_dock_layout": "full",
+
+  "gutter": {
+    "line_numbers": true,
+    "runnables": true,
+    "breakpoints": true,
+    "folds": false,
+    "min_line_number_digits": 1
+  },
+
+
+  "cursor_shape": "bar",
+  "cursor_blink": false,
+  "multi_cursor_modifier": "alt",
+
+  "scrollbar": {
+    // When to show the scrollbar in the editor (auto, system, always, never)
+    "show": "system",
+    "cursors": true, // Show cursor positions in the scrollbar.
+    "git_diff": true, // Show git diff indicators in the scrollbar.
+    "search_results": true, // Show buffer search results in the scrollbar.
+    "selected_text": true, // Show selected text occurrences in the scrollbar.
+    "selected_symbol": true, // Show selected symbol occurrences in the scrollbar.
+    "diagnostics": "all", // Show diagnostics (none, error, warning, information, all)
+    "axes": {
+      "horizontal": true, // Show/hide the horizontal scrollbar
+      "vertical": false // Show/hide the vertical scrollbar
+    }
+  },
+  "theme": "Codely Dark (Blur)",
+  "git_panel": {
+    "button": true, // Show/hide status bar icon
+    "dock": "left", // Where to dock: left, right
+    "default_width": 360, // Default width of the git panel.
+    "status_style": "icon", // label_color, icon
+    "sort_by_path": false, // Sort by path (false) or status (true)
+    "scrollbar": {
+      "show": null // Show/hide: (auto, system, always, never)
+    }
+  },
+
+  // Debugger Panel
+  "debugger": {
+    "dock": "bottom", // Where to dock: left, right, bottom
+    "button": true // Show/hide status bar icon
+  },
+
+  // Outline Panel
+  "outline_panel": {
+    "button": true, // Show/hide status bar icon
+    "default_width": 300, // Default width of the git panel
+    "dock": "left", // Where to dock: left, right
+    "file_icons": true, // Show/hide file_icons
+    "folder_icons": true, // Show file_icons (true), chevrons (false) for dirs
+    "git_status": true, // Show git status
+    "indent_size": 20, // Indentation for nested items (pixels)
+    "indent_guides": {
+      "show": "always" // Show indent guides (always, never)
+    },
+    "auto_reveal_entries": true, // Show file in panel when activating its buffer
+    "auto_fold_dirs": true, // Fold dirs with single subdir
+    "scrollbar": {
+      // Project panel scrollbar settings
+      "show": null // Show/hide: (auto, system, always, never)
+    }
+  },
+  "project_panel": {
+    "button": true, // Show/hide button in the status bar
+    "default_width": 180, // Default panel width
+    "dock": "right", // Position of the dock (left, right)
+    "entry_spacing": "standard", // Vertical spacing (comfortable, standard)
+    "file_icons": true, // Show/hide file icons
+    "folder_icons": true, // Show/hide folder icons
+    "git_status": true, // Indicate new/updated files
+    "indent_size": 14, // Pixels for each successive indent
+    "auto_reveal_entries": true, // Show file in panel when activating its buffer
+    "auto_fold_dirs": true, // Fold dirs with single subdir
+    "sticky_scroll": true, // Stick parent directories at top of the project panel.
+    "drag_and_drop": true, // Whether drag and drop is enabled
+    "scrollbar": {
+      // Project panel scrollbar settings
+      "show": null // Show/hide: (auto, system, always, never)
+    },
+    "show_diagnostics": "all", //
+    // Settings related to indent guides in the project panel.
+    "indent_guides": {
+      // When to show indent guides in the project panel. (always, never)
+      "show": "always"
+    },
+    // Whether to hide the root entry when only one folder is open in the window.
+    "hide_root": false
+  },
+
+  //editor behaviour
+
+  "vim_mode": false,
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true,
+    "selections_menu": true,
+    "agent_review": false,
+    "code_actions": false
+  },
+  // Project Panel Settings
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "file_scan_exclusions": [],
+  "format_on_save": "off",
+
+  // other
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    }
+  }
+}

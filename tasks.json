@@ -1,7 +1,7 @@
 [
   {
     "label": "execute cpp-11",
-    "command": "sh ~/.config/zed/tasks/cpp/cpp-11.sh",
+    "command": "sh ~/.config/zed/scripts/cpp/cpp-11.sh",
     "description": "compiles and runs current file with cpp11",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,

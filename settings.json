@@ -25,7 +25,6 @@
     "min_line_number_digits": 1
   },
 
-
   "cursor_shape": "bar",
   "cursor_blink": false,
   "multi_cursor_modifier": "alt",
@@ -55,7 +54,6 @@
       "show": null // Show/hide: (auto, system, always, never)
     }
   },
-
 
   "ui_font_family": "Pixeloid Sans",
 

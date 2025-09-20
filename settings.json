@@ -25,6 +25,8 @@
     "min_line_number_digits": 1
   },
 
+  "tab_size": 2,
+
   "cursor_shape": "bar",
   "cursor_blink": false,
   "multi_cursor_modifier": "alt",
@@ -56,6 +58,7 @@
   },
 
   "ui_font_family": "Pixeloid Sans",
+
 
   // Debugger Panel
   "debugger": {
@@ -107,6 +110,16 @@
     },
     // Whether to hide the root entry when only one folder is open in the window.
     "hide_root": false
+  },
+  "inlay_hints": {
+    "enabled": false,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+    "toggle_on_modifiers_press": null
   },
 
   //editor behaviour

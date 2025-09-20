@@ -34,5 +34,17 @@
     "bindings": {
       "alt-cmd-g": null
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-u": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-shift-u": "editor::GoToDeclaration"
+    }
   }
 ]

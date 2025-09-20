@@ -2,10 +2,17 @@
   {
     "label": "execute cpp-11",
     "command": "sh ~/.config/zed/scripts/cpp/cpp-11.sh",
-    "description": "compiles and runs current file with cpp11",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     "reveal": "always",
     "show_command": true
-  }
+ },
+ {
+   "label": "bun run dev",
+   "command": "sh ~/.config/zed/scripts/ts/run-dev.sh",
+   "use_new_terminal": true,
+   "allow_concurrent_runs": false,
+   "reveal": "always",
+   "show_command": true
+ }
 ]

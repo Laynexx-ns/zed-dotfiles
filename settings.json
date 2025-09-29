@@ -8,6 +8,14 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   //ui settings
+  "context_servers": {
+    "github-activity-summarizer": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {}
+    }
+  },
+  "icon_theme": "Catppuccin Macchiato",
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_line_height": "comfortable",
@@ -59,7 +67,6 @@
 
   "ui_font_family": "Pixeloid Sans",
 
-
   // Debugger Panel
   "debugger": {
     "dock": "bottom", // Where to dock: left, right, bottom
@@ -78,8 +85,8 @@
     "indent_guides": {
       "show": "always" // Show indent guides (always, never)
     },
-    "auto_reveal_entries": true, // Show file in panel when activating its buffer
-    "auto_fold_dirs": true, // Fold dirs with single subdir
+    "auto_reveal_entries": false, // Show file in panel when activating its buffer
+    "auto_fold_dirs": false, // Fold dirs with single subdir
     "scrollbar": {
       // Project panel scrollbar settings
       "show": null // Show/hide: (auto, system, always, never)

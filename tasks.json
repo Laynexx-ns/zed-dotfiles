@@ -8,6 +8,12 @@
     "show_command": true
  },
  {
+   "label": "Build C++ program",
+   "command": "g++",
+   "args": ["-g", "main.cpp", "-o", "main"],
+   "cwd": "$ZED_WORKTREE_ROOT"
+ },
+ {
    "label": "bun run dev",
    "command": "sh ~/.config/zed/scripts/ts/run-dev.sh",
    "use_new_terminal": true,

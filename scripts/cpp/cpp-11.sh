@@ -10,7 +10,7 @@ extension="${filename_and_ext##*.}"
 echo "running $filename_and_ext from $full_path"
 
 if [[ "$extension" == "cpp" ]]; then
-    g++ --std=c++11 -O2 -Wall -Wextra "$full_path" -o "$filename" && ./"$filename"
+    rm ./"$filename" && g++ --std=c++11 -O2 -Wall -Wextra "$full_path" -o "$filename" && ./"$filename"
 else
     echo "not a cpp file"
 fi

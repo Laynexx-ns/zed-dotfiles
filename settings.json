@@ -85,22 +85,30 @@
     "indent_guides": {
       "show": "always" // Show indent guides (always, never)
     },
-    "auto_reveal_entries": false, // Show file in panel when activating its buffer
+    "auto_reveal_entries": true, // Show file in panel when activating its buffer
     "auto_fold_dirs": false, // Fold dirs with single subdir
     "scrollbar": {
       // Project panel scrollbar settings
       "show": null // Show/hide: (auto, system, always, never)
     }
   },
+
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "disable_ai": true,
+  "hide_mouse": "on_typing_and_movement",
   "project_panel": {
     "button": true, // Show/hide button in the status bar
-    "default_width": 180, // Default panel width
+    "default_width": 300, // Default panel width
     "dock": "right", // Position of the dock (left, right)
-    "entry_spacing": "standard", // Vertical spacing (comfortable, standard)
+    "entry_spacing": "comfortable", // Vertical spacing (comfortable, standard)
     "file_icons": true, // Show/hide file icons
     "folder_icons": true, // Show/hide folder icons
     "git_status": true, // Indicate new/updated files
-    "indent_size": 14, // Pixels for each successive indent
+    "indent_size": 30, // Pixels for each successive indent
     "auto_reveal_entries": true, // Show file in panel when activating its buffer
     "auto_fold_dirs": true, // Fold dirs with single subdir
     "sticky_scroll": true, // Stick parent directories at top of the project panel.

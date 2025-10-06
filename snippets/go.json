@@ -1,52 +1,61 @@
 {
   "create func 0return": {
     "prefix": "f0",
-    "body": [
-      "func $0(){",
-      "",
-      "}"
-    ],
+    "body": ["func $0(){", "", "}"],
     "description": "uwu"
   },
   "create func 1return": {
     "prefix": "f1",
-    "body": [
-      "func $0() $1 {",
-      "",
-      "}"
-    ],
+    "body": ["func $0() $1 {", "", "}"],
     "description": "uwu"
   },
   "create func 2return": {
     "prefix": "f2",
-    "body": [
-      "func $0() ($1, $2) {",
-      "",
-      "}"
-    ],
+    "body": ["func $0() ($1, $2) {", "", "}"],
     "description": "uwu"
   },
   "create func for struct": {
     "prefix": "fs",
-    "body": [
-      "func f0($1, $2) $3($4) $5 {",
-      "",
-      "}"
-    ],
+    "body": ["func ($0 *$1) $2($3) $4 {", "", "}"],
+    "description": "creates function for structure"
+  },
+  "create func with two return vars for struct": {
+    "prefix": "fs2",
+    "body": ["func ($1 *$2) $3($4) ($5 $6) {", "", "}"],
     "description": "creates function for structure"
   },
   "interface": {
     "prefix": ["interface", "face"],
-    "body": ["type $0 interface {", "" , "}"],
+    "body": ["type $0 interface {", "", "}"],
     "description": "just creates interface"
   },
   "create struct": {
     "prefix": "struct",
+    "body": ["type $1 struct  {", "  $2", "}"],
+    "description": "meow"
+  },
+  "err nil check": {
+    "prefix": ["iferr", "ie", "ife"],
+    "body": ["if err != nil {", "  $1", "}"]
+  },
+  "err2 nil check": {
+    "prefix": ["iferr2", "ie2", "ife2"],
+    "body": ["if _, err := ${1:expression}($2); err != nil {$3}"]
+  },
+  "if err return": {
+    "prefix": ["iferreturn", "ier", "iferet"],
     "body": [
-      "type $0 struct  {",
-      "",
+      "if err != nil",
+      "  return $3, err",
       "}"
-    ],
-    "description": "creates a struct skeleton"
+    ]
+  },
+  "if err2 return": {
+    "prefix": ["iferreturn2", "ier2", "iferet2"],
+    "body": [
+      "if _, err := ${1:expression}($2); err != nil",
+      "  return $3, err",
+      "}"
+    ]
   }
 }

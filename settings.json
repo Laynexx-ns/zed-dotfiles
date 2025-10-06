@@ -9,6 +9,13 @@
 {
   //ui settings
   "context_servers": {
+    "postgres-context-server": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "database_url": "postgresql://postgres:postgres@postgres:5432/donly"
+      }
+    },
     "github-activity-summarizer": {
       "source": "extension",
       "enabled": true,
@@ -127,7 +134,7 @@
     "hide_root": false
   },
   "inlay_hints": {
-    "enabled": false,
+    "enabled": true,
     "show_type_hints": true,
     "show_parameter_hints": true,
     "show_other_hints": true,
@@ -135,6 +142,12 @@
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50,
     "toggle_on_modifiers_press": null
+  },
+
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
   },
 
   //editor behaviour

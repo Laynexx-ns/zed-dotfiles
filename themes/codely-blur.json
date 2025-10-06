@@ -116,7 +116,7 @@
         "hidden": "#6C6C6C",
         "hidden.background": "#333333",
         "hidden.border": "#333333",
-        "hint": "#569CD6",
+        "hint": "#F5A97F",
         "hint.background": "#569CD6",
         "hint.border": "#569CD64D",
         "ignored": "#858585",
@@ -232,8 +232,8 @@
             "font_weight": null
           },
           "hint": {
-            "color": "#569CD6",
-            "font_style": "oblique",
+            "color": "#F5A97F",
+            "font_style": "italic",
             "font_weight": null
           },
           "keyword": {

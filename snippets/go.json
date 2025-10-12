@@ -38,17 +38,17 @@
     "prefix": ["iferr", "ie", "ife"],
     "body": ["if err != nil {", "  $1", "}"]
   },
-  "err2 nil check": {
-    "prefix": ["iferr2", "ie2", "ife2"],
+  "err with 1 new nil check": {
+    "prefix": ["iev", "ifev"],
+    "body": ["if err := ${1:expression}($2); err != nil {$3}"]
+  },
+  "err with 2 new nil check": {
+    "prefix": ["iferr2", "iev2", "ife2"],
     "body": ["if _, err := ${1:expression}($2); err != nil {$3}"]
   },
   "if err return": {
     "prefix": ["iferreturn", "ier", "iferet"],
-    "body": [
-      "if err != nil",
-      "  return $3, err",
-      "}"
-    ]
+    "body": ["if err != nil", "  return $3, err", "}"]
   },
   "if err2 return": {
     "prefix": ["iferreturn2", "ier2", "iferet2"],

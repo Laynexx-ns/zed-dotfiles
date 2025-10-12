@@ -1,0 +1,10 @@
+{
+  "consolelog ": {
+    "prefix": ["cl", "clog"],
+    "body": ["console.log($1);"]
+  },
+  "consolelog var": {
+    "prefix": ["clv", "clogv"],
+    "body": ["console.log(\"$1: \", $1);"]
+  }
+}

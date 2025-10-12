@@ -8,6 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   //ui settings
+  "auto_update_extensions": {
+    "proto": false
+  },
   "context_servers": {
     "postgres-context-server": {
       "source": "extension",
@@ -24,7 +27,7 @@
   },
   "icon_theme": "Catppuccin Macchiato",
   "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
   "line_indicator_format": "long",
   "minimap": {
@@ -60,7 +63,7 @@
       "vertical": false // Show/hide the vertical scrollbar
     }
   },
-  "theme": "Codely Dark (Blur)",
+  "theme": "Fleet Dark",
   "git_panel": {
     "button": true, // Show/hide status bar icon
     "dock": "left", // Where to dock: left, right
@@ -165,18 +168,12 @@
     "edit_prediction_provider": "none"
   },
   "file_scan_exclusions": [],
-  "format_on_save": "off",
+  "format_on_save": "on",
 
   // other
 
   "telemetry": {
     "diagnostics": false,
     "metrics": false
-  },
-  "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    }
   }
 }

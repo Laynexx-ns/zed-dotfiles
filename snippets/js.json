@@ -5,7 +5,7 @@
   },
   "try catch": {
     "prefix": ["tc"],
-    "body": ["try {", "  $1", "} catch {", "  $2", "}"]
+    "body": ["try {", "$1", "} catch {", "$2", "}"]
   },
   "three resizing": {
     "prefix": ["threesize"],

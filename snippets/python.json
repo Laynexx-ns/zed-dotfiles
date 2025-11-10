@@ -1,0 +1,7 @@
+{
+  "for": {
+    "prefix": ["forin"],
+    "body": ["for $1 in range($2, $3):"]
+  }
+}
+

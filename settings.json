@@ -7,6 +7,36 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  //languages settings
+  "terminal": {
+    "font_family": ".ZedMono"
+  },
+  "title_bar": {
+    "show_branch_icon": false
+  },
+  "Python": {
+    "languages": {
+      "Python": {
+        "language_servers": ["ty"]
+      }
+    },
+    "formatter": {
+      "language_server": {
+        "name": "ty"
+      }
+    }
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "analysis": {
+          "diagnosticMode": "workspace",
+          "inlayHints.callArgumentNames": false
+        }
+      }
+    }
+  },
+
   //ui settings
   "auto_update_extensions": {
     "proto": false
@@ -25,15 +55,19 @@
       "settings": {}
     }
   },
-  "icon_theme": "Catppuccin Macchiato",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Macchiato",
+    "dark": "Catppuccin Macchiato"
+  },
   "ui_font_size": 16,
-  "buffer_font_size": 14,
+  "buffer_font_size": 16,
   "buffer_line_height": "comfortable",
   "line_indicator_format": "long",
   "minimap": {
     "show": "auto"
   },
-  "bottom_dock_layout": "full",
+  "bottom_dock_layout": "contained",
 
   "gutter": {
     "line_numbers": true,
@@ -63,7 +97,7 @@
       "vertical": false // Show/hide the vertical scrollbar
     }
   },
-  "theme": "Fleet Dark",
+  "theme": "Floral Pink",
   "git_panel": {
     "button": true, // Show/hide status bar icon
     "dock": "left", // Where to dock: left, right
@@ -137,7 +171,7 @@
     "hide_root": false
   },
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
     "show_type_hints": true,
     "show_parameter_hints": true,
     "show_other_hints": true,

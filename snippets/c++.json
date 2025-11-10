@@ -1,0 +1,6 @@
+{
+  "coutvar": {
+    "prefix": ["cvar"],
+    "body": ["std::cout << \"$1: \" << $1 << std::endl;"]
+  }
+}

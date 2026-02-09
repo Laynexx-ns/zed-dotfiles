@@ -7,6 +7,14 @@
     "prefix": ["tc"],
     "body": ["try {", "$1", "} catch {", "$2", "}"]
   },
+  "JSDocParams": {
+    "prefix": ["jsdocparam"],
+    "body": ["/**", "*", "* @param {$1} $2", "*/"]
+  },
+  "JSDocTypedef": {
+    "prefix": ["jsdoctypedef"],
+    "body": ["/**", "*", "* @typedef {$1} $2", "* @property {$3} [$4]", "*/"]
+  },
   "three resizing": {
     "prefix": ["threesize"],
     "body": [

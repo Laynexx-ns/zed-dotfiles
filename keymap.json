@@ -46,5 +46,22 @@
     "bindings": {
       "ctrl-alt-shift-u": "editor::GoToDeclaration"
     }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "cmd-l": "agent::ToggleProfileSelector"
+    }
+  },
+  {
+    "bindings": {
+      "alt-shift-l": "editor::ToggleTabBar"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl->": "editor::ShowCompletions"
+    }
   }
 ]

@@ -10,13 +10,8 @@
   // -----------
   // LANGUAGE SETTINGS
   // -----------
-
-  "auto_update_extensions": {
-    "vue": false,
-  },
   "show_edit_predictions": false,
   "edit_predictions": {
-    "provider": "zed",
     "mode": "eager",
   },
   "use_system_prompts": true,
@@ -32,55 +27,29 @@
   "lsp": {
     "vtsls": {
       "settings": {
-        // For JavaScript:
-        "javascript": {
-          "inlayHints": {
-            "parameterNames": {
-              "enabled": "all",
-              "suppressWhenArgumentMatchesName": false,
-            },
-            "parameterTypes": {
-              "enabled": true,
-            },
-            "variableTypes": {
-              "enabled": true,
-              "suppressWhenTypeMatchesName": true,
-            },
-            "propertyDeclarationTypes": {
-              "enabled": true,
-            },
-            "functionLikeReturnTypes": {
-              "enabled": true,
-            },
-            "enumMemberValues": {
-              "enabled": true,
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+            "tsserver": {
+              "maxTsServerMemory": 16184,
             },
           },
         },
-        // For TypeScript:
-        "typescript": {
-          "inlayHints": {
-            "parameterNames": {
-              "enabled": "all",
-              "suppressWhenArgumentMatchesName": false,
-            },
-            "parameterTypes": {
-              "enabled": true,
-            },
-            "variableTypes": {
-              "enabled": true,
-              "suppressWhenTypeMatchesName": true,
-            },
-            "propertyDeclarationTypes": {
-              "enabled": true,
-            },
-            "functionLikeReturnTypes": {
-              "enabled": true,
-            },
-            "enumMemberValues": {
-              "enabled": true,
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+            "tsserver": {
+              "maxTsServerMemory": 16184,
             },
           },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+    "volar": {
+      "settings": {
+        "typescript": {
+          "tsdk": "./node_modules/typescript/lib",
         },
       },
     },
@@ -109,7 +78,14 @@
       "tab_size": 2,
       "language_servers": ["!typescript-language-server", "vtsls"],
     },
-
+    "Vue.js": {
+      "tab_size": 2,
+      "language_servers": [
+        "!typescript-language-server",
+        "vtsls",
+        "emmet-language-server",
+      ],
+    },
     "Python": {
       "language_servers": ["ty"],
     },
@@ -154,10 +130,13 @@
     "default_profile": "write",
     "dock": "left",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
+      "provider": "google",
+      "model": "gemini-3-flash-preview",
     },
     "model_parameters": [],
+  },
+  "features": {
+    "edit_prediction_provider": "zed",
   },
 
   // EDITOR UI
@@ -224,7 +203,7 @@
   },
 
   "tab_bar": {
-    "show": false,
+    "show": true,
     "show_nav_history_buttons": false,
     "show_tab_bar_buttons": false,
   },

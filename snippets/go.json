@@ -1,18 +1,15 @@
 {
   "create func 0return": {
     "prefix": "f0",
-    "body": ["func $1(){", "", "}"],
-    "description": "uwu"
+    "body": ["func $1(){", "", "}"]
   },
   "create func 1return": {
     "prefix": "f1",
-    "body": ["func $1() $2 {", "", "}"],
-    "description": "uwu"
+    "body": ["func $1() $2 {", "", "}"]
   },
   "create func 2return": {
     "prefix": "f2",
-    "body": ["func $1() ($2, $3) {", "", "}"],
-    "description": "uwu"
+    "body": ["func $1() ($2, $3) {", "", "}"]
   },
   "create func for struct": {
     "prefix": "fs",
@@ -31,8 +28,7 @@
   },
   "create struct": {
     "prefix": "struct",
-    "body": ["type $1 struct  {", "  $2", "}"],
-    "description": "meow"
+    "body": ["type $1 struct  {", "  $2", "}"]
   },
   "err nil check": {
     "prefix": ["iferr", "ie", "ife"],

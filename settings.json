@@ -11,13 +11,15 @@
   // LANGUAGE SETTINGS
   // -----------
 
+
   "auto_update_extensions": {
+    "biome": false,
     "vue": false,
   },
   "show_edit_predictions": false,
   "edit_predictions": {
     "provider": "zed",
-    "mode": "eager",
+    "mode": "subtle",
   },
   "use_system_prompts": true,
   "restore_on_startup": "last_session",
@@ -32,58 +34,34 @@
   "lsp": {
     "vtsls": {
       "settings": {
-        // For JavaScript:
-        "javascript": {
-          "inlayHints": {
-            "parameterNames": {
-              "enabled": "all",
-              "suppressWhenArgumentMatchesName": false,
-            },
-            "parameterTypes": {
-              "enabled": true,
-            },
-            "variableTypes": {
-              "enabled": true,
-              "suppressWhenTypeMatchesName": true,
-            },
-            "propertyDeclarationTypes": {
-              "enabled": true,
-            },
-            "functionLikeReturnTypes": {
-              "enabled": true,
-            },
-            "enumMemberValues": {
-              "enabled": true,
-            },
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
           },
         },
-        // For TypeScript:
-        "typescript": {
-          "inlayHints": {
-            "parameterNames": {
-              "enabled": "all",
-              "suppressWhenArgumentMatchesName": false,
-            },
-            "parameterTypes": {
-              "enabled": true,
-            },
-            "variableTypes": {
-              "enabled": true,
-              "suppressWhenTypeMatchesName": true,
-            },
-            "propertyDeclarationTypes": {
-              "enabled": true,
-            },
-            "functionLikeReturnTypes": {
-              "enabled": true,
-            },
-            "enumMemberValues": {
-              "enabled": true,
-            },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
           },
         },
       },
+      "enable_lsp_tasks": true,
     },
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": ["cva", "cx"],
+
+        "includeLanguages": {
+          "blade": "html",
+          "vue": "html",
+        },
+
+        "experimental": {
+          "classRegex": ["[cls|className|class]\\s\\:\\=\\s\"([^\"]*)"],
+        },
+      },
+    },
+
     "rust-analyzer": {
       "initialization_options": {
         "inlayHints": {
@@ -132,10 +110,25 @@
 
   // PROFILES
   "profiles": {
+    "focus": {
+      "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false,
+        "selections_menu": false,
+        "agent_review": false,
+        "code_actions": false,
+      },
+      "status_bar": {
+        "experimental.show": false,
+        "active_encoding_button": "disabled",
+        "cursor_position_button": false,
+        "line_endings_button": true,
+      },
+    },
     "presentation": {
       "buffer_font_size": 22,
       "ui_font_size": 18,
-      "theme": "Modest Dark",
+      "theme": "FleetLx Dark",
     },
   },
 
@@ -155,14 +148,17 @@
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini",
+      "model": "claude-opus-4.6",
     },
     "model_parameters": [],
   },
 
   // EDITOR UI
-  "theme": "Aura Dark",
+  "theme": "FleetLx Light",
   "theme_overrides": {
+    "Transparent Prism - Sakura": {
+      "surface.background": "#0000000",
+    },
     "Aura Dark": {
       "border.variant": "#15141C",
       "border": "#15141C",
@@ -199,21 +195,23 @@
     "dark": "Puppet Icons",
   },
   "ui_font_size": 15,
+  "ui_font_family": "Geist Mono",
   "buffer_font_size": 15,
   "buffer_line_height": "comfortable",
   "line_indicator_format": "long",
   "minimap": {
-    "show": "never",
+    "show": "auto",
   },
   "bottom_dock_layout": "contained",
 
   // TERMINAL
   "terminal": {
+    "shell": "system",
     "toolbar": {
       "breadcrumbs": false,
     },
     "font_weight": 400.0,
-    "font_size": 15,
+    "font_size": 13,
     "font_family": "BlexMono Nerd Font Mono",
   },
   "colorize_brackets": true,
@@ -224,7 +222,7 @@
   },
 
   "tab_bar": {
-    "show": false,
+    "show": true,
     "show_nav_history_buttons": false,
     "show_tab_bar_buttons": false,
   },
@@ -238,13 +236,14 @@
   "status_bar": {
     "experimental.show": true,
     "active_encoding_button": "disabled",
-    "cursor_position_button": false,
+    "cursor_position_button": true,
     "line_endings_button": true,
   },
 
   "gutter": {
-    "line_numbers": false,
+    "line_numbers": true,
     "runnables": true,
+
     "breakpoints": true,
     "folds": true,
     "min_line_number_digits": 1,
@@ -378,7 +377,6 @@
   //editor behaviour
 
   "vim_mode": false,
-
   // Project Panel Settings
   // "features": {
   //   "edit_prediction_provider": "none"
